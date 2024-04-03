@@ -33,8 +33,8 @@ fi
 unset rc
 
 # Initialize ssh-agent in the background and add ssh key for github
-eval $(ssh-agent -s)
-ssh-add ~/.ssh/gh_id_rsa
+eval $(ssh-agent -s) 1> /dev/null 2>&1
+ssh-add ~/.ssh/gh_id_rsa 1> /dev/null 2>&1
 
 # Git prompt
 source ~/.git-prompt

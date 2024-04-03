@@ -1,7 +1,7 @@
 # dotfiles
 Personal repository to store Linux dotfiles.
 
-Edit the exclude flags in the `update_dotfiles.sh` script to suit your needs:
+Edit the exclude flags in the `backup.sh` and `restore.sh` scripts before executing them:
 ```
 ...
 rsync -av --exclude='*.token' \
@@ -10,7 +10,12 @@ rsync -av --exclude='*.token' \
 ...
 ```
 
-Then run
+To backup the current dotfiles in $HOME, execute the `backup.sh` script:
 ```
->./update_dotfiles.sh
+./backup.sh
+```
+
+If you want to restore the repo into your $HOME directory instead, run the `restore.sh` script:
+```
+./restore.sh
 ```

@@ -10,7 +10,8 @@ rsync -av --exclude='*.token' \
           --exclude='.cache' \
           --exclude='.conan' \
           --exclude='.ssh' \
+          --exclude='.config' \
           --exclude='.vscode-server' \
-          --exclude='*' \
           --include='.*' \
+          --exclude='*' \
           "$SOURCE_DIR" "$DEST_DIR"
