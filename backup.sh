@@ -7,6 +7,7 @@ rsync -av --exclude='*.token' \
           --exclude='.viminfo' \
           --exclude='*history*' \
           --exclude='*hst*' \
+          --exclude='.local' \
           --exclude='.cache' \
           --exclude='.conan' \
           --exclude='.ssh' \
