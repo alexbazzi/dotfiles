@@ -2,4 +2,5 @@
 alias la='ls -lath'
 alias vi='nvim'
 alias vim='nvim'
+alias sudo='sudo '
 
